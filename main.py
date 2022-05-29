@@ -222,43 +222,122 @@ def buildClassSim(listofconcepts = None):
     return df
 
 
-
-#build the atomic relations table with random generated false axioms
-def buildRelationsGenerated(P_relation):
+def buildRelationsExisting(P_relation, P_set_axiom_number):
+    N_relation = None
+    if P_relation == 'owl:disjointWith':
+        N_relation = 'rdfs:subClassOf'
+    else:
+        N_relation = 'owl:disjointWith'
+        
+    print("extracting existing axioms and sampling")
     tic = time.perf_counter()
+    
     query = '''
-
-    select ?class1 ?class2 ?label where {
-
-
-    {
+    SELECT ?class1 ?class2 ?label WHERE {
     ?class1 a owl:Class
     ?class2 a owl:Class
-    ?class1 ''' + P_relation +'''?class2
+    ?class1 ''' + P_relation + ''' ?class2
     filter (!isBlank(?class1)  && !isBlank(?class2))
-    bind(1.0 as ?label)}
-
-    Union
-
-    {?class1 a owl:Class
-    ?class2 a owl:Class
-    filter (!isBlank(?class1)  && !isBlank(?class2)  && (?class1 != ?class2))
-    bind(0 as ?label)
-
-    minus
-
-    {
-    ?class1 a owl:Class
-    ?class2 a owl:Class
-    ?class1 ''' + P_relation +''' ?class2
-    filter (!isBlank(?class1)  && !isBlank(?class2))
-    bind(0 as ?label)}}
-    }
-
+    filter (?class1 != ?class2)
+    bind(1.0 as ?label)
+    BIND(RAND() AS ?random) .
+    } ORDER BY ?random
+    LIMIT ''' + str(P_set_axiom_number) + '''
     '''
-
-    # generating all possible combinations of 2 atomic classes to create the false axioms with -1 p index
-    allrelations = sparql_service_to_dataframe(wds_Corese, query)
+    
+    positiverelations = sparql_service_to_dataframe(wds_Corese, query)
+    print("positive relations extracted")
+    print(positiverelations.shape)
+    
+    query = '''
+    SELECT ?class1 ?class2 ?label WHERE {
+    ?class1 a owl:Class
+    ?class2 a owl:Class
+    ?class1 ''' + N_relation + ''' ?class2
+    filter (!isBlank(?class1)  && !isBlank(?class2))
+    filter (?class1 != ?class2)
+    bind(0 as ?label)
+    BIND(RAND() AS ?random) .
+    } ORDER BY ?random
+    LIMIT ''' +  str(positiverelations.shape[0]) + ''' 
+    '''
+    negativeiverelations = sparql_service_to_dataframe(wds_Corese, query)
+    print("negativeive relations extracted")
+    print(negativeiverelations.shape)
+    
+    # retrieving the existing axioms that are labeled as accepted
+    allrelations = pd.concat([positiverelations, negativeiverelations], axis=0).sample(frac = 1, random_state = 1).reset_index(drop=True)
+    print(allrelations.shape)
+    
+    allrelations = allrelations.astype({'label': 'float'})
+    allrelations = allrelations.rename(columns={"class1": "left", "class2": "right"})
+    allrelations = sample_dataset(allrelations)
+    listofaxioms = axiom_type+"(<"+ allrelations["left"] + "> <" + allrelations["right"] + ">)"
+    
+    concepts =  pd.Series(pd.Series(np.hstack([allrelations["left"],allrelations["right"]])).drop_duplicates().values).sort_values()
+    concepts =  "\"" + concepts.astype(str) + "\"" # just to add " " around the concepts to be considered strings when sent in the queries
+    concept_string = ",".join(concepts) 
+    print("concepts series")
+    print(concepts.shape)
+    
+    
+    
+    print(allrelations.shape)
+    listofaxioms.to_csv(rdfminer_path+'\IO\listofaxioms.txt', sep=',', index=False, header = False)
+    #allrelations.to_csv( path +'allrelations.csv', index=False)
+    print('allrelations created')
+    toc = time.perf_counter()
+    print(f"it took {toc - tic:0.4f} seconds to extract the axioms and concepts")
+    
+    return allrelations, concept_string, concepts
+  
+  
+#build the atomic relations table with random generated false axioms
+def buildRelationsGenerated(P_relation,P_set_axiom_number ):
+    N_relation = None
+    if P_relation == 'owl:disjointWith':
+        N_relation = 'rdfs:subClassOf'
+    else:
+        N_relation = 'owl:disjointWith'
+        
+    print("extracting existing axioms and sampling")
+    tic = time.perf_counter()
+    
+    query = '''
+    SELECT ?class1 ?class2 ?label WHERE {
+    ?class1 a owl:Class
+    ?class2 a owl:Class
+    ?class1 ''' + P_relation + ''' ?class2
+    filter (!isBlank(?class1)  && !isBlank(?class2))
+    filter (?class1 != ?class2)
+    bind(1.0 as ?label)
+    BIND(RAND() AS ?random) .
+    } ORDER BY ?random
+    LIMIT ''' + str(P_set_axiom_number) + '''
+    '''
+    
+    positiverelations = sparql_service_to_dataframe(wds_Corese, query)
+    print("positive relations extracted")
+    print(positiverelations.shape)
+    
+    query = '''
+    SELECT ?class1 ?class2 ?label WHERE {
+    ?class1 a owl:Class
+    ?class2 a owl:Class
+    ?class1 ''' + N_relation + ''' ?class2
+    filter (!isBlank(?class1)  && !isBlank(?class2))
+    filter (?class1 != ?class2)
+    bind(0 as ?label)
+    BIND(RAND() AS ?random) .
+    } ORDER BY ?random
+    LIMIT ''' +  str(positiverelations.shape[0]) + ''' 
+    '''
+    negativeiverelations = sparql_service_to_dataframe(wds_Corese, query)
+    print("negativeive relations extracted")
+    print(negativeiverelations.shape)
+    
+    # retrieving the existing axioms that are labeled as accepted
+    allrelations = pd.concat([positiverelations, negativeiverelations], axis=0).sample(frac = 1, random_state = 1).reset_index(drop=True)
     print(allrelations.shape)
     
     allrelations = allrelations.astype({'label': 'float'})
@@ -417,20 +496,20 @@ if __name__ == '__main__':
     corese_server = subprocess.Popen(command_line, shell=True, cwd=corese_path)
     #CHANGE THIS TIMER IN CASE OF ERRORS
     time.sleep(10)
-    
+    set_axiom_number = 500
     
     #if statement that chooses the way axioms are genarated and scored
     if list_of_axioms == None and score == None :  #randomly generate atomic axioms (NOT RECOMMENDED FOR LARGE ONTOLOGIES 700+ concepts)
         if label_type == 'c' and dont_score == True:# dont score the random generated axioms
-            print('generating list from existing and random combination without scoring')
+            print('generating list from existing without scoring')
             df = buildClassSim()
-            allrelations = buildRelationsGenerated(relation)# create a list of axioms and send it to /rdfminer/io/ shared folder on ur machine
+            allrelations = buildRelationsGenerated(relation, set_axiom_number)# create a list of axioms and send it to /rdfminer/io/ shared folder on ur machine
         elif label_type == 'c' and dont_score == True and relation == 'owl:disjointWith':
             print('generating list from existing and random combination without scoring but not all combinations')
             
             
             
-            allrelations = buildRelationsGenerated(relation)
+            allrelations = buildRelationsGenerated(relation, set_axiom_number)
             concepts, concept_string, allrelations = clean_scored_atomic_axioms(label_type, axiom_type, score)
             df = buildClassSim(concept_string)
             
