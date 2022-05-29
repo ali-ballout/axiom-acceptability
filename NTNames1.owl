@@ -1,0 +1,2035 @@
+<!DOCTYPE rdf:RDF [
+   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#"> 
+]>
+
+<rdf:RDF 
+  xmlns:owl='http://www.w3.org/2002/07/owl#'
+  xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'
+  xmlns:ft='http://ns.inria.fr/sparql-template/format/rdfxml/'
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+
+<owl:Ontology rdf:about='http://semanticbible.org/ns/2006/NTNames'>
+  <rdfs:comment xml:lang='en'>The names here are as transliterated in the English Standard Version (ESV), copyright © 2001 by Crossway Bibles, a division of Good News Publishers. Reuse note: where feasible, class names coincide with SUMO (Suggested Upper Merged Ontology), as developed within the IEEE Standard Upper Ontology Working Group, described at http://www.ontologyportal.org/, and available as OWL at http://reliant.teknowledge.com/DAML/SUMO.owl (but not without some problems). I've copied, rather than re-used, but this provides a future migration path toward coordinating the two ontologies. </rdfs:comment>
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames' />
+<owl:versionInfo>1.0</owl:versionInfo>
+</owl:Ontology>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Agent'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#Agent SUO 1.55: July 14, 2003 Something or someone that can act on its own and produce changes in the world.</rdfs:comment>
+<rdfs:label xml:lang='en'>Agent</rdfs:label>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b24'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b24' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b24' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b24' />
+      </owl:sameAs>
+<owl:unionOf rdf:parseType='Collection'>
+        <rdf:Description rdf:about='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdf:Description rdf:about='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdf:Description rdf:about='http://semanticbible.org/ns/2006/NTNames#FixedHoliday' />
+<rdf:Description rdf:about='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Angel'>
+  <rdfs:comment xml:lang='en'>Supernatural beings that work to support God's purposes as his agents.</rdfs:comment>
+<rdfs:label xml:lang='en'>Angel</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Angel' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#God' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Angel' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Angel' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#BeliefGroup'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#BeliefGroup SUO 1.55: July 14, 2003 AGroup whosemembers share a belief or set of beliefs. For NTN, this covers groups defined by a particular set of beliefs (orthodox or heretical) which are informal, rather than formal, in membership and activity.</rdfs:comment>
+<rdfs:label xml:lang='en'>Belief Group</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b3'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b3' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b3' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b3' />
+      </owl:sameAs>
+<owl:unionOf rdf:parseType='Collection'>
+        <rdf:Description rdf:about='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdf:Description rdf:about='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefGroup' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefGroup' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefGroup' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#BeliefSystem'>
+  <rdfs:comment xml:lang='en'>An organization of propositions into an identifiable belief system. A person who holds to a belief system can be considered a member of the corresponding BeliefGroup. The notion of Proposition here is derived from http://reliant.teknowledge.com/DAML/SUMO.owl#Proposition.</rdfs:comment>
+<rdfs:label xml:lang='en'>Belief system</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Character'>
+  <rdfs:comment xml:lang='en'>Broadly the same as http://reliant.teknowledge.com/DAML/SUMO.owl#Character SUO 1.55: July 14, 2003 An element of an alphabet, a set of numerals, etc. Note that aCharacter may or may not be part of aLanguage.Character is a subclass ofSymbolicString, because every instance ofCharacter is an alphanumeric sequence consisting of a single element.</rdfs:comment>
+<rdfs:label xml:lang='en'>Character</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Character' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Character' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Character' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#CitizenshipAttribute'>
+  <rdfs:comment xml:lang='en'>Belonging to the citizenry of a country (e.g. Roman). There may be parallel ethnicity attributes (Roman being the primary example) which are not easily distinguished. In the case of Roman, while all ethnic Romans (in the general sense, though not necessarily legal sense [e.g. slaves]) are Roman citizens, there are other Roman citizens (e.g. Paul) who have different ethnicity. </rdfs:comment>
+<rdfs:label>Citizenship attribute</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CitizenshipAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#CitizenshipAttribute' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#CitizenshipAttribute' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#City'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#City SUO 1.55: July 14, 2003 ALandArea of relatively small size, inhabited by a community of people, and having some sort of political structure. Note that this class includes both large cities and small settlements like towns, villages, hamlets, etc.</rdfs:comment>
+<rdfs:label xml:lang='en'>City</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#City' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#City' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#City' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#CognitiveAgent SUO 1.55: July 14, 2003 ASentientAgent with responsibilities and the ability to reason, deliberate, make plans, etc. This is essentially the legal/ethical notion of a person. Note that, althoughHuman is a subclass ofCognitiveAgent, there may be instances ofCognitiveAgent which are not also instances ofHuman. For example, chimpanzees, gorillas, dolphins, whales, and some extraterrestrials (if they exist) may beCognitiveAgents.</rdfs:comment>
+<rdfs:label xml:lang='en'>Cognitive Agent</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject'>
+  <rdfs:comment xml:lang='en'>Broadly the same as http://reliant.teknowledge.com/DAML/SUMO.owl#ContentBearingObject SUO 1.55: July 14, 2003 AnySelfConnectedObject that expresses information.</rdfs:comment>
+<rdfs:label xml:lang='en'>Content Bearing Object</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#EthnicGroup'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#EthnicGroup SUO 1.55: July 14, 2003 AGroup whosemembers originate from the sameGeographicArea or share the sameLanguage and/or cultural practices.</rdfs:comment>
+<rdfs:label xml:lang='en'>Ethnic Group</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicGroup' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicGroup' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicGroup' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#EthnicityAttribute'>
+  <rdfs:comment xml:lang='en'>The attribute of belonging to a particular ethnic group, or originating from a GeographicArea. Unlike Residency, which can change, Ethnicity is considered permanent.</rdfs:comment>
+<rdfs:label xml:lang='en'>Ethnicity attribute</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicityAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicityAttribute' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicityAttribute' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#EvilSupernaturalBeing'>
+  <rdfs:comment xml:lang='en'>Class of malevolent supernatural beings, whose instances include Satan and demons. </rdfs:comment>
+<rdfs:label xml:lang='en'>Evil Supernatural Being</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#EvilSupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#God' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#EvilSupernaturalBeing' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#EvilSupernaturalBeing' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#FixedHoliday'>
+  <rdfs:comment xml:lang='en'>Would be a subclass of http://reliant.teknowledge.com/DAML/SUMO.owl#TimeInterval, but is specified within MILO. MILO:FixedHoliday is the class ofHolidays whose observance is fixed to recurrences of the calendar day that the holiday commemorates.</rdfs:comment>
+<rdfs:label xml:lang='en'>Fixed holiday</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#FixedHoliday' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#FixedHoliday' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#FixedHoliday' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#FreshWaterArea'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#FreshWaterArea SUO 1.55: July 14, 2003 AWaterArea whoseWater is not saline, e.g. most rivers and lakes.</rdfs:comment>
+<rdfs:label xml:lang='en'>Fresh Water Area</rdfs:label>
+<rdfs:subClassOf>
+    <owl:Restriction rdf:nodeID='_:b0'>
+      <owl:cardinality rdf:datatype='&xsd;int'>0</owl:cardinality>
+<owl:onProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlaceOf' />
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b0' />
+      </owl:sameAs>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#FreshWaterArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#WaterArea' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#SaltWaterArea' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#FreshWaterArea' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#FreshWaterArea' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#GeographicArea'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#GeographicArea SUO 1.55: July 14, 2003 A geographic location, generally having definite boundaries. Note that this differs from its immediate superclassRegion in that aGeographicArea is a three-dimensionalRegion of the earth. Accordingly, all astronomical objects other than earth and all one-dimensional and two-dimensionalRegions are not classed underGeographicArea.</rdfs:comment>
+<rdfs:label xml:lang='en'>Geographic Area</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#GeographicLocation'>
+  <rdfs:comment>A collection of properties describing geographic location. </rdfs:comment>
+<rdfs:label xml:lang='en'>Geographic Location</rdfs:label>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#GeopoliticalArea SUO 1.55: July 14, 2003 AnyGeographicArea which is associated with some sort of political structure. This class includesLands,Cities, districts of cities, counties, etc. Note that the identity of aGeopoliticalArea may remain constant after a change in borders.</rdfs:comment>
+<rdfs:label xml:lang='en'>Geopolitical Area</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#God'>
+  <rdfs:comment xml:lang='en'>Self-documenting</rdfs:comment>
+<rdfs:label xml:lang='en'>God</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#God' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#Angel' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#EvilSupernaturalBeing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#God' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#God' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Group'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#Group SUO 1.55: July 14, 2003 ACollection ofAgents, e.g. a flock of sheep, a herd of goats, or the local Boy Scout troop.</rdfs:comment>
+<rdfs:label xml:lang='en'>Group</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#GroupOfPeople SUO 1.55: July 14, 2003 AnyGroup whosemembers are exclusivelyHumans.</rdfs:comment>
+<rdfs:label xml:lang='en'>Group of People</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Human'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#Human SUO 1.55: July 14, 2003 Modern man, the only remaining species of the Homo genus.</rdfs:comment>
+<rdfs:label xml:lang='en'>Human</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#HumanAttribute'>
+  <rdfs:comment xml:lang='en'>Attributes of people, overlapping with the class hierarchy under suo:Group: this is unsatisfactory.</rdfs:comment>
+<rdfs:label xml:lang='en'>Human attribute</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Island'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#Island SUO 1.55: July 14, 2003 ALandArea that is completely surrounded by aWaterArea.</rdfs:comment>
+<rdfs:label xml:lang='en'>Island</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Island' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Island' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Island' />
+</owl:Class>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#LNID'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#FunctionalProperty' />
+<rdfs:comment xml:lang='en'>Louw-Nida identifier, keying specific Greek terms (and their English translations) to their taxonomy of semantic domains. A string like "33.X'.439" identifies the term sumballo, which can be translated as "to express differences of opinion in a forceful way". In their scheme, this has domain index 33 (Communication), with sub-domain index X' (Dispute, Debate). The final integer index uniquely defines this term (but the same term may have multiple senses). The sub-domain index can be determined from the term index, but it seems helpful to include both. Note the possible values of the sub-domain index are A-Z, then A'-Z', etc.</rdfs:comment>
+<rdfs:label xml:lang='en'>Louw-Nida identifier</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#string' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#LNID' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#LNID' />
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#LandArea'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#LandArea SUO 1.55: July 14, 2003 An area which is predominantly solid ground, e.g. aNation, a mountain, a desert, etc. Note that aLandArea may contain some relatively smallWaterAreas. For example, Australia is aLandArea even though it contains various rivers and lakes.</rdfs:comment>
+<rdfs:label xml:lang='en'>Land Area</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#WaterArea' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Man'>
+  <rdfs:comment xml:lang='en'>SUO 1.55: July 14, 2003 The class ofMaleHumans.</rdfs:comment>
+<rdfs:label xml:lang='en'>Man</rdfs:label>
+<rdfs:subClassOf>
+    <owl:Restriction rdf:nodeID='_:b2'>
+      <owl:allValuesFrom rdf:resource='http://semanticbible.org/ns/2006/NTNames#Woman' />
+<owl:onProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#spouseOf' />
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b2' />
+      </owl:sameAs>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Man' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#Woman' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Man' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Man' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Mountain'>
+  <rdfs:comment xml:lang='en'>Wordnet: "a land mass that projects well above its surroundings; higher than a hill. " Used here for things referred to as "mount", even though some of these might seem like hills to well-traveled observers. </rdfs:comment>
+<rdfs:label xml:lang='en'>Mountain</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Mountain' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Mountain' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Mountain' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Nation'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#Nation SUO 1.55: July 14, 2003 The broadestGeopoliticalArea, i.e.Nations areGeopoliticalAreas that are not part of any other overarching and comprehensive governance structure (excepting commonwealths and other sorts of loose international organizations). Note that modern nations referred to in the New Testament (Spain, Italy, Libya) are typically not instances of Nation, but rather of Region (if the borders are indefinite) or of LandArea.</rdfs:comment>
+<rdfs:label xml:lang='en'>Nation</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Nation' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Nation' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Nation' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#NaturalLanguage'>
+  <rdfs:comment xml:lang='en'>Broadly the same as http://reliant.teknowledge.com/DAML/SUMO.owl#NaturalLanguage SUO 1.55: July 14, 2003 Thesubclass ofHumanLanguages which are not designed and which evolve from generation to generation. ThisClass includes all of the national languages, e.g. English, Spanish, Japanese, etc. Note that this class includes dialects of natural languages.</rdfs:comment>
+<rdfs:label xml:lang='en'>Natural Language</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#NaturalLanguage' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#NaturalLanguage' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#NaturalLanguage' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Object'>
+  <rdfs:comment xml:lang='en'>Following http://reliant.teknowledge.com/DAML/SUMO.owl#Object, this "Corresponds roughly to the class of ordinary objects. Examples include normal physical objects, geographical regions, and locations ofProcesses, the complement ofObjects in thePhysical class. "</rdfs:comment>
+<rdfs:label xml:lang='en'>Object</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Organization'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#Organization .</rdfs:comment>
+<rdfs:label xml:lang='en'>Organization</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Organization' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Organization' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Organization' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#PoliticalAttribute'>
+  <rdfs:comment xml:lang='en'>The attribute of ascribing to a PoliticalBeliefSystem, or belonging to a political party or system.</rdfs:comment>
+<rdfs:label xml:lang='en'>Political attribute</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalAttribute' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalAttribute' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalAttribute' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#PoliticalBeliefSystem'>
+  <rdfs:label xml:lang='en'>Political belief system</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalBeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalBeliefSystem' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalBeliefSystem' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#PoliticalOrganization'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#PoliticalOrganization SUO 1.55: July 14, 2003 AnOrganization that is aGovernment, asubOrganization of aGovernment, or anOrganization that is attempting to bring about some sort of political change.</rdfs:comment>
+<rdfs:label xml:lang='en'>Political Organization</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Organization' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalOrganization' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalOrganization' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalOrganization' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Region'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#Region: "A topographic location. Regions encompass surfaces of Objects, imaginary places, and GeographicAreas. "</rdfs:comment>
+<rdfs:label xml:lang='en'>Region</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#ReligiousBelief'>
+  <rdfs:comment xml:lang='en'>The attribute of ascribing to a ReligiousBeliefSystem (which includes philosophies).</rdfs:comment>
+<rdfs:label xml:lang='en'>Religious belief</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBelief' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBelief' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBelief' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#ReligiousBeliefSystem'>
+  <rdfs:comment xml:lang='en'>A system of religious beliefs, or a philosophy.</rdfs:comment>
+<rdfs:label xml:lang='en'>Religious belief system</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBeliefSystem' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBeliefSystem' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#ReligiousOrganization'>
+  <rdfs:comment xml:lang='en'>Comparable to http://reliant.teknowledge.com/DAML/SUMO.owl#ReligiousOrganization SUO 1.55: July 14, 2003 AnOrganization whose members share a set of religious beliefs.</rdfs:comment>
+<rdfs:label xml:lang='en'>Religious Organization</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefGroup' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Organization' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousOrganization' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousOrganization' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousOrganization' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#ResidenceGroup'>
+  <rdfs:comment xml:lang='en'>A group identified by common residence in a City or StateOrProvince. At the level of Nation, this should generally be EthnicGroup. Unlike EthnicGroup, they need not have cultural or ethnic features in common.</rdfs:comment>
+<rdfs:label xml:lang='en'>Residence Group</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidenceGroup' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidenceGroup' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidenceGroup' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#ResidencyAttribute'>
+  <rdfs:comment xml:lang='en'>The attribute of living in a particular City or Province. Unlike Ethnicity, which is permanent, Residency can change.</rdfs:comment>
+<rdfs:label xml:lang='en'>Residency attribute</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidencyAttribute' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidencyAttribute' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidencyAttribute' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#SaltWaterArea'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#SaltWaterArea SUO 1.55: July 14, 2003 AWaterArea whoseWater is saline, e.g. oceans and seas.</rdfs:comment>
+<rdfs:label xml:lang='en'>Salt Water Area</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b0' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SaltWaterArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#WaterArea' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#FreshWaterArea' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#SaltWaterArea' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#SaltWaterArea' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Series'>
+  <rdfs:comment xml:lang='en'>Broadly the same as http://reliant.teknowledge.com/DAML/SUMO.owl#Series SUO 1.55: July 14, 2003 AText consisting of multiple self-contained units. Some examples are an encyclopedia containing a couple dozen volumes, a television series made up of many episodes, a film serial, etc.</rdfs:comment>
+<rdfs:label xml:lang='en'>Series</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Series' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Series' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Series' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#SonOfGod'>
+  <rdfs:comment xml:lang='en'>Both Human and God</rdfs:comment>
+<rdfs:label xml:lang='en'>Son of God</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#God' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SonOfGod' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#SonOfGod' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#SonOfGod' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#StateOrProvince'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#StateOrProvince SUO 1.55: July 14, 2003 Administrative subdivisions of aNation that are broader than any other political subdivisions that may exist. ThisClass includes the states of the United States, as well as the provinces of Canada and European countries. Here it covers both provinces and districts.</rdfs:comment>
+<rdfs:label xml:lang='en'>State or Province</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#StateOrProvince' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#StateOrProvince' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#StateOrProvince' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing'>
+  <rdfs:comment xml:lang='en'>A CognitiveAgent whose effects are not limited to the physical world. This includes the Lord Almighty, as well as supposed or imaginary deities.</rdfs:comment>
+<rdfs:label xml:lang='en'>Supernatural Being</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#SupernaturalRegion'>
+  <rdfs:comment>Those regions that are outside normal human existence. </rdfs:comment>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalRegion' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalRegion' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalRegion' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Tribe'>
+  <rdfs:comment xml:lang='en'>Subclass for the Twelve Tribes of Israel</rdfs:comment>
+<rdfs:label xml:lang='en'>Tribe</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicGroup' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Tribe' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Tribe' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Tribe' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#WaterArea'>
+  <rdfs:comment xml:lang='en'>Based on SUMO, http://reliant.teknowledge.com/DAML/SUMO.owl#WaterArea SUO 1.55: July 14, 2003 A body which is made up predominantly of water, e.g. rivers, lakes, oceans, etc.</rdfs:comment>
+<rdfs:label xml:lang='en'>Water Area</rdfs:label>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b0' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#WaterArea' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#WaterArea' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#WaterArea' />
+</owl:Class>
+
+<owl:Class rdf:about='http://semanticbible.org/ns/2006/NTNames#Woman'>
+  <rdfs:comment xml:lang='en'>SUO 1.55: July 14, 2003 The class ofFemaleHumans.</rdfs:comment>
+<rdfs:label xml:lang='en'>Woman</rdfs:label>
+<rdfs:subClassOf>
+    <owl:Restriction rdf:nodeID='_:b1'>
+      <owl:allValuesFrom rdf:resource='http://semanticbible.org/ns/2006/NTNames#Man' />
+<owl:onProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#spouseOf' />
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b1' />
+      </owl:sameAs>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Woman' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:disjointWith rdf:resource='http://semanticbible.org/ns/2006/NTNames#Man' />
+<owl:equivalentClass rdf:resource='http://semanticbible.org/ns/2006/NTNames#Woman' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#Woman' />
+</owl:Class>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#altitude'>
+  <rdfs:comment xml:lang='en'>The altitude component of a GeographicLocation</rdfs:comment>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>altitude</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#int' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#altitude' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#altitude' />
+</owl:DatatypeProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#antagonistOf'>
+  <rdfs:comment xml:lang='en'>"A person who opposes and contends against this person", similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range. </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>antagonist of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#antagonistOf' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#antagonistOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasAntagonist' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#antagonistOf' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#childOf'>
+  <rdfs:comment xml:lang='en'>Similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range. In-laws are considered relatives. </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>child of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#childOf' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#relativeOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#childOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#parentOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#childOf' />
+</owl:ObjectProperty>
+
+<owl:SymmetricProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#collaboratesWith'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:comment xml:lang='en'>"A person who works toward a common goal with this person", similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range. Those to whom the author of a New Testament Epistle send greetings are assumed to be collaborators, though this is perhaps broader than the general sense of the word. However, simple Christian fellowship or conversion do not constitute collaboration in this sense. </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>collaborates with</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#collaboratesWith' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#collaboratesWith' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#collaboratesWith' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#collaboratesWith' />
+</owl:SymmetricProperty>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#description'>
+  <rdfs:comment xml:lang='en'>A brief description of the salient aspects of a Human, based on their being mentioned in Scripture. This is not the way to enter dictionary-style definitions.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>description</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#string' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#description' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#description' />
+</owl:DatatypeProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#enemyOf'>
+  <rdfs:comment xml:lang='en'>"A person towards whom this person feels hatred, intends injury to, or opposes the interests of", similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>enemy of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#enemyOf' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#enemyOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasEnemy' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#enemyOf' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#ethnicity'>
+  <rdfs:comment xml:lang='en'>The ethnicity or, more generally, cultural heritage of a person. This can overlap with both religiousBelief (which may, however, change over time) and nativePlace (which, like ethnicity, does not change, though residency might). Whether a given property represents ethnicity or citizenship (nativePlace) can be a difficult decision, but in general, ethnic identities like "Jewish" or "Greek" take precedence. For example, we consider the Apostle Paul to have Jewish ethnicity, though he was a citizen of Tarsus, because he was raised as a Jew. Ethnicity is not specified without specific evidence, either textual or reliable tradition: for example, having a Greek name is not sufficient. </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>ethnicity</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicityAttribute' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicity' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicity' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicityOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicity' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#ethnicityOf'>
+  <rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicityAttribute' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>ethnicity of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicityOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicityOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicity' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#ethnicityOf' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#hasAntagonist'>
+  <rdfs:comment xml:lang='en'>inverse of antagonistOf, which is not necessarily reciprocal</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>has antagonist</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasAntagonist' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasAntagonist' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#antagonistOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasAntagonist' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#hasEnemy'>
+  <rdfs:comment xml:lang='en'>inverse of enemyOf, which is not necessarily reciprocal</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>has enemy</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasEnemy' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasEnemy' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#enemyOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasEnemy' />
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#hasOnlyGenealogyMention'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#FunctionalProperty' />
+<rdfs:comment xml:lang='en'>The only mention of this person in the New Testament text is the genealogies of Jesus recorded in Matthew 1 and/or Luke 3. Since only limited information (their ancestry) is available about this special subset of names, this property exists to support filtering them out (or in). </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>has only genealogy mention</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#boolean' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasOnlyGenealogyMention' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#hasOnlyGenealogyMention' />
+</owl:DatatypeProperty>
+
+<owl:SymmetricProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#knows'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:comment xml:lang='en'>"A person known by this person (indicating some level of reciprocated interaction between the parties)", similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range. Therefore this is a symmetric relationship: if I know you, you also know me (or else we don't "know" each other in this sense). </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>knows</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#knows' />
+</owl:SymmetricProperty>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#latitude'>
+  <rdfs:comment xml:lang='en'>The latitude component of a GeographicLocation</rdfs:comment>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>latitude</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#double' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#latitude' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#latitude' />
+</owl:DatatypeProperty>
+
+<owl:InverseFunctionalProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#location'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#FunctionalProperty' />
+<rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:comment xml:lang='en'>The location property relates a GeographicArea to a GeographicLocation. Each GeographicArea is assumed to have only one location, and no GeographicAreas share a location. </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>location</rdfs:label>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#location' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#location' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#locationOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#location' />
+</owl:InverseFunctionalProperty>
+
+<owl:InverseFunctionalProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#locationOf'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#locationOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#locationOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#location' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#locationOf' />
+</owl:InverseFunctionalProperty>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#longitude'>
+  <rdfs:comment xml:lang='en'>The longiitude component of a GeographicLocation</rdfs:comment>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>longitude</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#double' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#longitude' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#longitude' />
+</owl:DatatypeProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#member'>
+  <rdfs:comment xml:lang='en'>Group has member Human. Inverse of memberOf. No provision for membership changes over time.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>member</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#member' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#member' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#memberOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#member' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#memberOf'>
+  <rdfs:comment xml:lang='en'>Human is a memberOf a Group. Inverse of member. There are subtleties about Collections in SUMO that i'm omiting here.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>member of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#memberOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#memberOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#member' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#memberOf' />
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#name_en'>
+  <rdfs:comment xml:lang='en'>The human language name of an Object in English. Since Protege (3.0 build 141) doesn't seem to support loading and saving xml:lang attributes on properties, different subproperties are used for representing names in different languages.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>English name</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#string' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#name_en' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#name_en' />
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#name_grc'>
+  <rdfs:comment xml:lang='en'>The human language name of an Object in Koine (not Modern) Greek, in the standard dictionary form (nominative case). Since Protege (3.0 build 141) doesn't seem to support loading and saving xml:lang attributes on properties, different subproperties are used for representing names in different languages. "grc" is the three-letter ISO-639-2 standard designator for Koine Greek.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>Greek name</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#string' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#name_grc' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#name_grc' />
+</owl:DatatypeProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#nativePlace'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#FunctionalProperty' />
+<rdfs:comment xml:lang='en'>Birthplace, or place in which a person grows up. Unlike residentOf, only one possible value. residentPlace is to be preferred unless the birthplace relationship is clearly identified.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>native place</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlace' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlace' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlace' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlaceOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlace' />
+</owl:ObjectProperty>
+
+<owl:InverseFunctionalProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#nativePlaceOf'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlaceOf' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlaceOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlaceOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlace' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#nativePlaceOf' />
+</owl:InverseFunctionalProperty>
+
+<owl:DatatypeProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#occupation'>
+  <rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>occupation</rdfs:label>
+<rdfs:range rdf:resource='http://www.w3.org/2001/XMLSchema#string' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#occupation' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#occupation' />
+</owl:DatatypeProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#parentOf'>
+  <rdfs:comment xml:lang='en'>Similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>parent of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#parentOf' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#relativeOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#parentOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#childOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#parentOf' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#politicalBelief'>
+  <rdfs:comment xml:lang='en'>Holding to a PoliticalBelief</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>political belief</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalBeliefSystem' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#politicalBelief' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#politicalBelief' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#politicalBelief' />
+</owl:ObjectProperty>
+
+<owl:SymmetricProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#possiblySamePersonAs'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:comment xml:lang='en'>This person may be the same as the other person, though there isn't enough evidence to definitively say so. Typically the individuals will have the same name, and some overlap of circumstances that makes it possible. </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>possibly same person as</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#possiblySamePersonAs' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#possiblySamePersonAs' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#possiblySamePersonAs' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#possiblySamePersonAs' />
+</owl:SymmetricProperty>
+
+<owl:SymmetricProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#relativeOf'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:comment xml:lang='en'>A person who is related by kinship to this person. No attempt is made to delineate precisely which kinship relations qualify: this is used when a description indicates two people are "related". parent/child/siblingOf are subproperties of this, properly speaking. </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>relative of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#relativeOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#relativeOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#relativeOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#relativeOf' />
+</owl:SymmetricProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#religiousBelief'>
+  <rdfs:comment xml:lang='en'>Having a ReligiousBelief as an attribute</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>religious belief</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBeliefSystem' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBelief' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBelief' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBeliefOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBelief' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#religiousBeliefOf'>
+  <rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBeliefSystem' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>religious belief of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBeliefOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBeliefOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBelief' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#religiousBeliefOf' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#residentPlace'>
+  <rdfs:comment xml:lang='en'>The location a person or group of people resides in. Range values may change over time: no attempt is made to capture this. Transient residence of very short duration is assumed to be visited, not resident. People addressed in a letter bound for a specific destination (e.g. the epistle of Paul to the Romans) are assumed to be resident there unless there is indication to the contrary (since the timing of a letter's arrival could not be determined with high precision). </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>resident place</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlace' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlace' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlace' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlaceOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlace' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#residentPlaceOf'>
+  <rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlaceOf' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlaceOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlaceOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlace' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#residentPlaceOf' />
+</owl:ObjectProperty>
+
+<owl:SymmetricProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#siblingOf'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdf:type rdf:resource='http://www.w3.org/2002/07/owl#TransitiveProperty' />
+<rdfs:comment xml:lang='en'>Similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range.</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>sibling of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#relativeOf' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#siblingOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#siblingOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#siblingOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#siblingOf' />
+</owl:SymmetricProperty>
+
+<owl:SymmetricProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#spouseOf'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+<rdfs:comment xml:lang='en'>Similar to http://purl.org/vocab/relationship vocabulary, but with different domain and range. Multiple spouses are all included, whether sequential (Herodias) or simultaneous (the woman at the well). </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>spouse of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#spouseOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#spouseOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#spouseOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#spouseOf' />
+</owl:SymmetricProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#subregion'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#TransitiveProperty' />
+<rdfs:comment xml:lang='en'>Inverse of subregionOf</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>subregion</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregion' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregion' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregionOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregion' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#subregionOf'>
+  <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#TransitiveProperty' />
+<rdfs:comment xml:lang='en'>A smaller GeographicArea is a subregionOf a larger one (e.g. Jerusalem is a subregionOf Israel).</rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>subregion of</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregionOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregionOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregion' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#subregionOf' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#visitedPlace'>
+  <rdfs:comment xml:lang='en'>Places that a human visited. For current purposes, only instances which are explicitly mentioned in Scripture are included, not those that might be inferred (e.g. if going from from A to B implies visiting C, C would not be listed). </rdfs:comment>
+<rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:label xml:lang='en'>visited place</rdfs:label>
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:range rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlace' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlace' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlaceOf' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlace' />
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about='http://semanticbible.org/ns/2006/NTNames#visitedPlaceOf'>
+  <rdfs:domain>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:domain>
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:domain rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:domain rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:range>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:range>
+<rdfs:range rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<rdfs:subPropertyOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlaceOf' />
+<owl:equivalentProperty rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlaceOf' />
+<owl:inverseOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlace' />
+<owl:sameAs rdf:resource='http://semanticbible.org/ns/2006/NTNames#visitedPlaceOf' />
+</owl:ObjectProperty>
+
+<rdf:Description rdf:about='http://www.w3.org/1999/02/22-rdf-syntax-ns#List'>
+  <owl:sameAs rdf:resource='http://www.w3.org/1999/02/22-rdf-syntax-ns#List' />
+</rdf:Description>
+
+<rdf:Property rdf:about='http://www.w3.org/1999/02/22-rdf-syntax-ns#first'>
+  <owl:sameAs rdf:resource='http://www.w3.org/1999/02/22-rdf-syntax-ns#first' />
+</rdf:Property>
+
+<rdf:Description rdf:about='http://www.w3.org/1999/02/22-rdf-syntax-ns#nil'>
+  <owl:sameAs rdf:resource='http://www.w3.org/1999/02/22-rdf-syntax-ns#nil' />
+</rdf:Description>
+
+<rdf:Property rdf:about='http://www.w3.org/1999/02/22-rdf-syntax-ns#rest'>
+  <owl:sameAs rdf:resource='http://www.w3.org/1999/02/22-rdf-syntax-ns#rest' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/1999/02/22-rdf-syntax-ns#type'>
+  <owl:sameAs rdf:resource='http://www.w3.org/1999/02/22-rdf-syntax-ns#type' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2000/01/rdf-schema#comment'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2000/01/rdf-schema#comment' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2000/01/rdf-schema#domain'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2000/01/rdf-schema#domain' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2000/01/rdf-schema#label'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2000/01/rdf-schema#label' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2000/01/rdf-schema#range'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2000/01/rdf-schema#range' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2000/01/rdf-schema#subClassOf'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2000/01/rdf-schema#subClassOf' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2000/01/rdf-schema#subPropertyOf'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2000/01/rdf-schema#subPropertyOf' />
+</rdf:Property>
+
+<rdf:Description rdf:about='http://www.w3.org/2001/XMLSchema#boolean'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2001/XMLSchema#boolean' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2001/XMLSchema#double'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2001/XMLSchema#double' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2001/XMLSchema#int'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2001/XMLSchema#int' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2001/XMLSchema#string'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2001/XMLSchema#string' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#Class'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#Class' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#DatatypeProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#DatatypeProperty' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#FunctionalProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#FunctionalProperty' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#InverseFunctionalProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#InverseFunctionalProperty' />
+</rdf:Description>
+
+<owl:Class rdf:about='http://www.w3.org/2002/07/owl#Nothing'>
+  <rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b0' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b1' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b12'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b12' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b12' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b12' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b15'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b15' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b15' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b15' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b18'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b18' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b18' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b18' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b2' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b21'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b21' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b21' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b21' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b24' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b29'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b29' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b29' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b29' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <rdf:Description rdf:nodeID='_:b3' />
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b34'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b34' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b34' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b34' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b37'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b37' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b37' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b37' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b6'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b6' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b6' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b6' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf>
+    <owl:Class rdf:nodeID='_:b9'>
+      <rdfs:subClassOf>
+        <rdf:Description rdf:nodeID='_:b9' />
+      </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass>
+        <rdf:Description rdf:nodeID='_:b9' />
+      </owl:equivalentClass>
+<owl:sameAs>
+        <rdf:Description rdf:nodeID='_:b9' />
+      </owl:sameAs>
+    </owl:Class>
+  </rdfs:subClassOf>
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Agent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Angel' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefGroup' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#BeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Character' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CitizenshipAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#City' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#CognitiveAgent' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ContentBearingObject' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicGroup' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#EthnicityAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#EvilSupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#FixedHoliday' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#FreshWaterArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeographicLocation' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GeopoliticalArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#God' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Group' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#GroupOfPeople' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Human' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#HumanAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Island' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#LandArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Man' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Mountain' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Nation' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#NaturalLanguage' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Object' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Organization' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalBeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#PoliticalOrganization' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Region' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBelief' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousBeliefSystem' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ReligiousOrganization' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidenceGroup' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#ResidencyAttribute' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SaltWaterArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Series' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SonOfGod' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#StateOrProvince' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalBeing' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#SupernaturalRegion' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Tribe' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#WaterArea' />
+<rdfs:subClassOf rdf:resource='http://semanticbible.org/ns/2006/NTNames#Woman' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Nothing' />
+<rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://www.w3.org/2002/07/owl#Nothing' />
+<owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#Nothing' />
+</owl:Class>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#ObjectProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#ObjectProperty' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#Ontology'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#Ontology' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#Restriction'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#Restriction' />
+</rdf:Description>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#SymmetricProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#SymmetricProperty' />
+</rdf:Description>
+
+<owl:Class rdf:about='http://www.w3.org/2002/07/owl#Thing'>
+  <rdfs:subClassOf rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:equivalentClass rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+<owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#Thing' />
+</owl:Class>
+
+<rdf:Description rdf:about='http://www.w3.org/2002/07/owl#TransitiveProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#TransitiveProperty' />
+</rdf:Description>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#allValuesFrom'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#allValuesFrom' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#cardinality'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#cardinality' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#disjointWith'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#disjointWith' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#equivalentClass'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#equivalentClass' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#equivalentProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#equivalentProperty' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#inverseOf'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#inverseOf' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#onProperty'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#onProperty' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#sameAs'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#sameAs' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#unionOf'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#unionOf' />
+</rdf:Property>
+
+<rdf:Property rdf:about='http://www.w3.org/2002/07/owl#versionInfo'>
+  <owl:sameAs rdf:resource='http://www.w3.org/2002/07/owl#versionInfo' />
+</rdf:Property>
+
+</rdf:RDF>

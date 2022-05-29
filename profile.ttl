@@ -1,0 +1,10 @@
+st:user a st:Server ;
+#st:service "Joconde" ;
+st:content [
+    a sw:Workflow ; sw:body (
+
+		[ a sw:Load ; sw:path  "go-plus.owl" ]
+   
+	)
+] 
+.
