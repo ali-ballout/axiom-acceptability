@@ -72,7 +72,7 @@ def get_rar_dataset(filename, n=None):
 
 file_name='mirrorcompareclassificationmatrixowlthing'
 
-X, gram, mu, names = get_rar_dataset("C:/Users/ballo/OneDrive - Université Nice Sophia Antipolis/corese/axiom-prediction/fragments/"+file_name+".csv")
+X, gram, mu, names = get_rar_dataset("/corese/axiom-prediction/fragments/"+file_name+".csv")
 print('done extracting matrix')
 
 
