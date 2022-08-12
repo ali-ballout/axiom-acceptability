@@ -46,7 +46,7 @@ def sparql_service_to_dataframe(service, query):
 
 
 def matrixfractionold(start, end, size):
-    path = 'c:/Users/Ali/Desktop/fragments/'
+    path = '/fragments/'
     df = pd.read_csv(path+'classessim.csv')
     allrelations = pd.read_csv(path+'allrelations.csv')
     axiomsimilaritymatrix = pd.DataFrame({"axiom1": [],"axiom1I": [], "axiom2": [],"axiom2I": [], "a1c1": [],
@@ -240,6 +240,6 @@ def matrixfractionq(start, end, size):
                                     "sim1": sim1,"sim2": sim2,"overallsim":min(sim1,sim2)}
                                     ,ignore_index=True)
 
-    path = 'c:/Users/Ali/OneDrive/Desktop/corese/fragments/'
+    path = '/fragments/'
     axiomsimilaritymatrix.to_csv( path + str(start) + '.csv', sep=',', index=False)
     return axiomsimilaritymatrix
