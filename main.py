@@ -26,8 +26,8 @@ from numba import cuda, jit, prange, vectorize, guvectorize
 
 #parameters that can be edited
 def setParam(P_threadcount = 24, P_split = 1000,  P_prefix = 'http://dbpedia.org/ontology/' ,  P_relation = 'owl:disjointWith', P_path = 'fragments/',
-             P_corese_path = os.path.normpath(r"C:\Users\ballo\OneDrive - Université Nice Sophia Antipolis\corese\corese-server"), 
-             P_rdfminer_path = os.path.normpath(r"C:\Users\ballo\OneDrive - Université Nice Sophia Antipolis\corese\RDFMining-main"),
+             P_corese_path = os.path.normpath(r"\corese\corese-server"), 
+             P_rdfminer_path = os.path.normpath(r"\corese\RDFMining-main"),
              P_command_line = 'start /w cmd /k java -jar -Dfile.encoding=UTF8 -Xmx20G corese-server-4.1.5.jar -e -lp -debug -pp profile.ttl', 
              P_wds_Corese = 'http://localhost:8080/sparql', P_label_type = 'c', P_list_of_axioms = None, P_score = None,  P_dont_score = True):
     global threadcount    #number of process for multiprocessing avoid using logical cores
@@ -485,7 +485,7 @@ if __name__ == '__main__':
     #end version, every parameter that can be changed should be here
     setParam(P_threadcount = 24, P_split =1500,  P_prefix = '' ,  P_relation = 'owl:disjointWith', P_path = 'fragments/',
              P_corese_path = os.path.normpath("C:\corese-server"),
-             P_rdfminer_path = os.path.normpath(r"C:\Users\ballo\OneDrive - Université Nice Sophia Antipolis\corese\RDFMining-main"),
+             P_rdfminer_path = os.path.normpath(r"\corese\RDFMining-main"),
              P_command_line = 'start /w cmd /k java -jar -Dfile.encoding=UTF8 -Xmx20G corese-server-4.1.5.jar -e -lp -debug -pp profile.ttl', 
              P_wds_Corese = 'http://localhost:8080/sparql', P_label_type='c', P_list_of_axioms= None, P_score = 'resultsresults.json', P_dont_score = True)
     
