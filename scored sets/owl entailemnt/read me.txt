@@ -1,3 +1,0 @@
-This folder contains the java code for the axiom entailemnt tester, and some experimental data sets to try it out.
-
-The file dbpedia-axioms sandbox.owl is where you place the axioms you want to check, please use the same format.
