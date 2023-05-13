@@ -1,1 +1,2 @@
 This folder contains the score data sets used for the model vs reasoner experiment
+We also include the DBpedia closure we used to save you the time of reasoning it again, use this ontology in thejava entailment program
