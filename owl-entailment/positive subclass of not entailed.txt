@@ -1,0 +1,6 @@
+SubClassOf(<http://schema.org/Museum> <http://dbpedia.org/ontology/Museum>)
+SubClassOf(<http://dbpedia.org/ontology/GovernmentAgency> <http://schema.org/GovernmentOrganization>)
+SubClassOf(<http://schema.org/Museum> <http://dbpedia.org/ontology/ArchitecturalStructure>)
+SubClassOf(<http://dbpedia.org/ontology/YearInSpaceflight> <http://dbpedia.org/ontology/Concept>)
+SubClassOf(<http://schema.org/Museum> <http://schema.org/Place>)
+SubClassOf(<http://schema.org/Museum> <http://dbpedia.org/ontology/Place>)

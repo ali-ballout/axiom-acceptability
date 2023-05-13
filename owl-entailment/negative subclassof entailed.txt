@@ -1,0 +1,4 @@
+Axiom: SubClassOf(<http://schema.org/Product> <http://dbpedia.org/ontology/Automobile>)entailed.
+Axiom: SubClassOf(<http://schema.org/Product> <http://dbpedia.org/ontology/Aircraft>)entailed.
+Axiom: SubClassOf(<http://schema.org/Product> <http://dbpedia.org/ontology/Ship>)entailed.
+Axiom: SubClassOf(<http://schema.org/Product> <http://dbpedia.org/ontology/Locomotive>)entailed.
