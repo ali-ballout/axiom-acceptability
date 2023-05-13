@@ -10,10 +10,6 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
-/**
- *
- * @author Iliana Petrova
- */
 public class Utils {
 
     static OWLOntology checkOntology(String fileName){
@@ -36,7 +32,7 @@ public class Utils {
 
         try{
 
-            //HermiT
+            //HermiT is the reasoner, in our experiment its reasoning over a closure produced by pellet, so both reasoners
             Reasoner.ReasonerFactory reasonerFactory = new Reasoner.ReasonerFactory();
             reasoner = reasonerFactory.createReasoner(ontology);
 
